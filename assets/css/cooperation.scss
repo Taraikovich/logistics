@@ -1,0 +1,62 @@
+.cooperation {
+  h2 {
+    color: #2d6ac8;
+  }
+  .accordion {
+    .accordion-item {
+      border-color: #fff;
+    }
+    .accordion-button {
+      font-weight: 500;
+      font-size: clamp(18px, 2.5vw, 25px);
+      color: #2d6ac8;
+      border: 1px solid #2d6ac899;
+
+      &::after {
+        background-image: url('../img/acc.svg');
+        background-position: center;
+      }
+
+      &:not(.collapsed) {
+        background-color: #fff;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .accordion-body {
+      border: 1px solid #2d6ac899;
+      font-weight: 400;
+      font-size: 14px;
+      color: #2d6ac8;
+    }
+  }
+
+  .accordion-img {
+    height: 490px;
+  }
+
+  .btn {
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    background: #003998;
+    height: 50px;
+
+    p {
+      margin: 0;
+    }
+
+    i {
+      height: 40px;
+      width: 40px;
+      background-color: #fff;
+      color: #003998;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

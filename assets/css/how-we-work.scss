@@ -1,0 +1,37 @@
+.how-we-work {
+  h2 {
+    color: #2d6ac8;
+  }
+  .how-we-work-list {
+    border-left: 1px solid #2d6ac8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 355px;
+    counter-reset: step;
+    p {
+      counter-increment: step;
+      font-weight: 500;
+      font-size: 20px;
+      color: #2d6ac8;
+      display: flex;
+      margin-bottom: 0;
+      &::before {
+        content: counter(step);
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #2d6ac8;
+        margin-left: -15px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .how-we-work-img {
+    height: 355px;
+  }
+}

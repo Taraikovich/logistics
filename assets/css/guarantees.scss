@@ -1,0 +1,29 @@
+.guarantees {
+  .guarantees-cards {
+    .guarantees-card {
+      border: 1px solid #2d6ac8;
+      i,
+      h3 {
+        font-family: 'Manrope';
+        font-weight: 700;
+        font-size: clamp(18px, 3vw, 22px);
+        color: #2d6ac8;
+      }
+      p {
+        font-family: 'Manrope';
+        font-weight: 400;
+        font-size: clamp(14px, 2.5vw, 16px);
+      }
+
+      &:nth-child(3) {
+        background: #2d6ac8;
+
+        h3,
+        i,
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

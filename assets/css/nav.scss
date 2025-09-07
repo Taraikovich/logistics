@@ -1,0 +1,136 @@
+nav {
+  height: 60px;
+  font-family: Manrope;
+  font-weight: 500;
+  background-color: #ffffff;
+
+  #navbarContent {
+    @media (max-width: 1400px) {
+      background-color: #2d6ac8;
+    }
+
+    .search-box {
+      @media (max-width: 1400px) {
+        background-color: #fff;
+        border-radius: 20px;
+        margin: 15px;
+        width: calc(100% - 30px);
+      }
+    }
+
+    .navbar-nav,
+    .contact-btns {
+      @media (max-width: 1400px) {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 15px;
+        margin: 15px;
+      }
+    }
+
+    .contact-btns {
+      @media (max-width: 1400px) {
+        border-radius: 30px;
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+
+.nav-link {
+  color: #2d6ac8;
+}
+
+.nav-link:hover {
+  color: #173483;
+}
+
+.massager-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1.41px solid #2d6ac8;
+  border-radius: 100%;
+  scale: 0.7;
+}
+
+.massager-btn:hover {
+  border-color: #173483;
+}
+
+.tg-btn {
+  background: url('../img/tg.svg') no-repeat 43% center;
+}
+
+.tg-btn:hover {
+  background: url('../img/tg.svg') no-repeat 43% center;
+  background: #173483 url('../img/tg-hover.svg') no-repeat 43% center;
+}
+
+.whatsapp-btn {
+  background: url('../img/whatsapp.svg') no-repeat center;
+}
+
+.whatsapp-btn:hover {
+  background: #173483 url('../img/whatsapp-hover.svg') no-repeat center;
+}
+
+.viber-btn {
+  background: url('../img/viber.svg') no-repeat center;
+}
+
+.viber-btn:hover {
+  background: #173483 url('../img/viber-hover.svg') no-repeat center;
+}
+
+.header-btn {
+  width: 145px;
+  height: 38px;
+  background: #2d6ac8;
+  font-family: Manrope;
+  font-weight: 500;
+  font-size: 15.56px;
+  color: #ffffff;
+
+  &:hover {
+    background: #173483;
+    color: #ffffff;
+  }
+}
+
+.header-btn-mob {
+  width: 100px;
+  height: 30px;
+  font-size: 10px;
+}
+
+a[href^='tel:'] {
+  color: #2d6ac8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  width: 30px;
+  height: 30px;
+  background: #2d6ac8 url('../img/burger.svg') no-repeat center;
+
+  &[aria-expanded='true'] {
+    background: #2d6ac8 url('../img/cross.svg') no-repeat center;
+  }
+}
+
+select {
+  appearance: none; /* убираем дефолтную стрелку */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background: url('../img/arrow-select.svg') no-repeat right 6px center;
+  background-size: 12px 12px;
+  width: 54px;
+  height: 30px;
+  padding: 0 10px;
+  color: #2d6ac8;
+}

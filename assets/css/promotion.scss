@@ -1,0 +1,48 @@
+.promotion {
+  .promotion-pagination {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-size: 32px;
+    color: #2d6ac833;
+    .swiper-pagination-current {
+      color: #3b3b3b;
+    }
+  }
+  .promotion-cards {
+    @media screen and (min-width: 1024px) {
+      .swiper-slide {
+        &:nth-child(odd) {
+          .promotion-card {
+            min-height: 600px;
+          }
+        }
+
+        &:nth-child(even) {
+          .promotion-card {
+            min-height: 500px;
+          }
+        }
+      }
+    }
+    .promotion-card {
+      background: #2d6ac8;
+      color: #fff;
+
+      h3 {
+        font-family: 'Manrope';
+        font-weight: 800;
+        font-size: 24px;
+        color: #fff;
+      }
+
+      p {
+        font-family: Manrope;
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+  }
+}

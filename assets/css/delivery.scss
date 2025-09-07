@@ -1,0 +1,61 @@
+.delivery {
+  p {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .delivery-bg {
+    img {
+      width: 100%;
+    }
+  }
+  .swiper-wrapper {
+    max-height: 500px;
+  }
+  .delivery-cards {
+    margin-top: -65px;
+    position: relative;
+    z-index: 1;
+    @media screen and (min-width: 768px) {
+      margin-top: -32%;
+    }
+
+    .delivery-card {
+      border: 1px solid #2d6ac866;
+      background: #fff;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      .delivery-card-img {
+        img {
+          width: 100%;
+        }
+      }
+      .delivery-card-text {
+        h3 {
+          font-family: 'Manrope';
+          font-weight: 700;
+          font-size: 28px;
+          color: #2d6ac8;
+          transition: color 0.3s;
+        }
+
+        p {
+          font-family: 'Manrope';
+          font-weight: 400;
+          font-size: 14px;
+          color: #3b3b3b;
+          transition: color 0.3s;
+        }
+      }
+
+      &:hover {
+        background: #2d6ac8;
+        h3,
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

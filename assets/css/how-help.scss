@@ -1,0 +1,53 @@
+.how-help {
+  h2 {
+    color: #2d6ac8;
+    max-width: 470px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #2d6ac8;
+    max-width: 470px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &:nth-of-type(odd) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &-card-img {
+    height: 280px;
+    display: none;
+    @media screen and (min-width: 1400px) {
+      display: block;
+    }
+  }
+
+  &-card {
+    background: #003998;
+    height: 270px;
+    h3 {
+      font-weight: 700;
+      font-size: clamp(24px, 2.5vw, 26px);
+      color: #fff;
+    }
+
+    p,
+    .btn {
+      font-weight: 400;
+      font-size: 16px;
+      color: #fff;
+      padding: 0;
+    }
+
+    @media screen and (min-width: 1400px) {
+      height: 280px;
+    }
+  }
+}

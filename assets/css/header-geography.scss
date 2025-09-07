@@ -1,0 +1,24 @@
+.header-geography {
+  height: 650px;
+  background: url('../img/geo.png') no-repeat -560px 130px;
+  background-size: cover;
+  mix-blend-mode: Luminosity;
+
+  @media screen and (min-width: 1000px) {
+    background: url('../img/geo.png') no-repeat center -240px;
+    background-size: 150%;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: clamp(18px, 2.5vw, 20px);
+    color: #fff;
+  }
+
+  .btn {
+    background: #fff;
+    color: #2d6ac8;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}

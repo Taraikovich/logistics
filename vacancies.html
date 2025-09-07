@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons-1.13.1/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xxl d-flex justify-content-between fixed-top">
+        <div class="container p-0">
+            <div class="logo-mob ms-2 d-xxl-none">
+                <img src="./assets/img/logo.png.svg" alt="logo" />
+            </div>
+
+            <div class="d-flex align-items-center">
+                <select class="rounded-4 border-primary text-primaryme-xxl-3 me-xxl-5">
+                    <option value="ru">RU</option>
+                    <option value="en">EN</option>
+                </select>
+
+                <button class="btn header-btn header-btn-mob rounded-5 ms-1 d-xxl-none">
+                    Запрос ставки
+                </button>
+            </div>
+
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                <div class="input-group search-box d-xxl-none">
+                    <input type="text" class="form-control rounded-start-4" placeholder="Поиск..." />
+                    <button class="btn rounded-end-4" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+                <ul class="navbar-nav gap-xxl-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О компании</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="#">Услуги</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Транспортные услуги</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Дополнительные услуги</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">География перевозок</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Акции</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Наши проекты</a>
+                    </li>
+                </ul>
+
+                <div class="contact-btns d-flex align-items-center justify-content-between gap-xxl-3">
+                    <a href="tel:+79129999999" class="fw-bold">+7 (912) 999-99-99</a>
+                    <div class="d-flex align-items-center gap-xxl-2">
+                        <button class="btn massager-btn tg-btn"></button>
+                        <button class="btn massager-btn whatsapp-btn"></button>
+                        <button class="btn massager-btn viber-btn"></button>
+                        <button class="btn header-btn rounded-5 ms-xxl-3 d-none d-xxl-block">
+                            Запрос ставки
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="overflow-hidden rounded-bottom-5">
+        <div class="header-nav">
+            <div class="container d-flex align-items-center justify-content-between py-3">
+                <div class="d-none d-xxl-flex">
+                    <img src="./assets/img/logo-big.svg" alt="logo" />
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-header-nav active rounded-start-4 px-4" aria-current="page">Партнёр</a>
+                    <a href="#" class="btn btn-header-nav px-4">Соискатель</a>
+                    <a href="#" class="btn btn-header-nav rounded-end-4 px-4">Клиент</a>
+                </div>
+
+                <div class="input-group search-box-header d-none d-md-flex">
+                    <input type="text" class="form-control rounded-start-5" placeholder="Поиск..." />
+                    <button class="btn btn-search rounded-end-5" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-content position-relative py-3">
+            <div class="container">
+                <h1>
+                    Присоединяйтесь
+                    <span class="d-md-block text-md-center">к команде </span>
+                    <span class="d-md-block text-md-end">профессионалов!</span>
+                </h1>
+            </div>
+            <div class="header-text row">
+                <div class="header-img col-xxl-8">
+                    <div class="header-img-top">
+                        <img style="transform: scaleX(1);" src="./assets/img/vacancies.png" alt="" />
+                    </div>
+                    <div class="header-img-back">
+                        <img src="./assets/img/map.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xxl-4 d-flex flex-column justify-content-center align-items-xxl-start">
+                    <p class="p-xxl-0">
+                        Мы ищем ответственных, инициативных и надежных сотрудников, готовых развиваться вместе с нами. 
+                        Компания [Название компании] — это стабильность, уверенность в завтрашнем дне и реальные
+                        карьерные перспективы.
+                    </p>
+                    <a href="#">
+                        <button class="btn btn-order rounded-5 mt-3 ms-xxl-0">Оставить заявку <i
+                                class="bi bi-arrow-up-right"></i></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb my-5">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Вакансии</li>
+            </ol>
+        </nav>
+    </div>
+
+    <section class="work-with-us overflow-hidden">
+        <div class="container">
+            <h2 class="text-xl-center">
+                Почему выбирают нас
+            </h2>
+            <p class="my-3 my-xl-4 text-xl-center">Работая в [Название компании], вы становитесь частью команды, где
+                ценят труд,
+                поддерживают
+                рост и создают
+                комфортные условия для каждого сотрудника.</p>
+            <div class="swiper work-with-us-cards overflow-visible">
+                <div class="swiper-wrapper d-flex align-items-stretch">
+                    <div class="swiper-slide d-flex h-auto">
+                        <div class="work-with-us-card p-4 rounded-4">
+                            <i class="bi bi-file-earmark-text"></i>
+                            <h3 class="my-3">Официальное трудоустройство</h3>
+                            <p>Все сотрудники оформляются официально: с записью в трудовую книжку, полным соцпакетом,
+                                оплачиваемыми больничными и отпуском.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex h-auto">
+                        <div class="work-with-us-card p-4 rounded-4">
+                            <i class="bi bi-clock"></i>
+                            <h3 class="my-3">Своевременная выплата заработной платы</h3>
+                            <p>Мы гарантируем стабильную и прозрачную оплату труда — без задержек и скрытых удержаний.
+                                Заработная плата перечисляется точно в срок 2 раза в месяц.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex h-auto">
+                        <div class="work-with-us-card p-4 rounded-4">
+                            <i class="bi bi-mortarboard"></i>
+                            <h3 class="my-3">Обучение и наставничество</h3>
+                            <p>Мы обучаем новых сотрудников, предоставляем вводный инструктаж и поддержку опытных
+                                наставников. Не важно, есть ли у вас опыт — главное желание работать и развиваться.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex h-auto">
+                        <div class="work-with-us-card p-4 rounded-4">
+                            <i class="bi bi-people-fill"></i>
+                            <h3 class="my-3">ОДружный коллектив
+                                и комфортные условия труда</h3>
+                            <p>Мы ценим взаимопомощь, уважение и честность. На рабочих местах — чисто, безопасно и
+                                удобно. Коллектив — это команда, а не просто сотрудники.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex h-auto">
+                        <div class="work-with-us-card p-4 rounded-4">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            <h3 class="my-3">Возможность карьерного роста</h3>
+                            <p>Мы развиваемся — и растут наши люди. Многие из наших руководителей начинали с простых
+                                должностей. Предоставляем реальные шансы на продвижение по карьерной лестнице.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex h-auto">
+                        <a href="#"
+                            class="work-with-us-card button-card p-3 rounded-4 w-100 d-flex justify-content-between">
+                            <p class="align-self-end">Оставить заявку</p>
+                            <i class="bi bi-arrow-up-right-circle"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logistic-nav d-flex d-xxl-none justify-content-between container py-3">
+            <button
+                class="btn btn-nav btn-nav-work-with-us-prev rounded-5 d-flex justify-content-center align-items-center"><i
+                    class="bi bi-arrow-left-short"></i></button>
+            <div class="logistic-pagination work-with-us-pagination d-flex justify-content-center align-items-center">00
+                / 00
+            </div>
+            <button
+                class="btn btn-nav btn-nav-work-with-us-next rounded-5 d-flex justify-content-center align-items-center"><i
+                    class="bi bi-arrow-right-short"></i></button>
+        </div>
+    </section>
+
+    <section class="vacancies my-5">
+        <div class="container">
+            <h2 class="my-3">Вакансии</h2>
+            <div class="row g-3 row-cols-1 row-cols-lg-3">
+                <div class="col">
+                    <div class="vacancy-card p-4 rounded-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <p class="vacancy-card-city"><i class="bi bi-geo-alt"></i> Минск</p>
+                            <h3>Специалист по логистике</h3>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <p>Опыт работы</p>
+                                <p class="vacancy-card-blue">От 1 года</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="w-50">Формат работы</p>
+                                <p class="w-50 vacancy-card-blue text-end">Полный день</p>
+                            </div>
+                        </div>
+                        <a href="#" class="align-self-end">
+                            <button class="btn">Откликнуться <i class="bi bi-arrow-up-right-circle"></i></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="vacancy-card p-4 rounded-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <p class="vacancy-card-city"><i class="bi bi-geo-alt"></i> Минск</p>
+                            <h3>Менеджер по продажам транспортных услуг</h3>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <p>Опыт работы</p>
+                                <p class="vacancy-card-blue">От 1 года</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="w-50">Формат работы</p>
+                                <p class="w-50 vacancy-card-blue text-end">Полный день,
+                                    с перспективой удаленки</p>
+                            </div>
+                        </div>
+                        <a href="#" class="align-self-end">
+                            <button class="btn">Откликнуться <i class="bi bi-arrow-up-right-circle"></i></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="vacancy-card p-4 rounded-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <p class="vacancy-card-city"><i class="bi bi-geo-alt"></i> Минск</p>
+                            <h3>Бухгалтер</h3>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <p>Опыт работы</p>
+                                <p class="vacancy-card-blue">От 2 года</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="w-50">Формат работы</p>
+                                <p class="w-50 vacancy-card-blue text-end">Полный день,
+                                    с перспективой сменного графика</p>
+                            </div>
+                        </div>
+                        <a href="#" class="align-self-end">
+                            <button class="btn">Откликнуться <i class="bi bi-arrow-up-right-circle"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="vacancy-request my-5">
+        <div class="container">
+            <div class="row g-0 row-cols-xl-2 rounded-4 overflow-hidden">
+                <div class="vacancy-form p-4 p-xl-5 d-flex flex-column justify-content-between">
+                    <h2>Хотите работать с нами?</h2>
+                    <p class="mt-4">Оставьте свои данные — мы обязательно с вами свяжемся и обсудим детали.</p>
+                    <form action="">
+                        <div class="row row-cols-1 row-cols-xl-2 mb-3">
+                            <div class="col">
+                                <input type="text" name="name" placeholder="ФИО*">
+                                <input type="email" name="email" placeholder="Ваш адрес электронной почты">
+                            </div>
+                            <div class="col">
+                                <input type="tel" name="phone" placeholder="+375 ХХ ХХХ-ХХ-ХХ">
+                                <label for="formFile" class="resume-upload">
+                                    <i class="bi bi-file-earmark-text"></i> Прикрепить резюме
+                                </label>
+                                <input type="file" id="formFile">
+                            </div>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="consentInfo">
+                            <label class="form-check-label" for="consentInfo">
+                                Я прочитал(а) разъяснение порядка обработки персональных данных и
+                                ознакомился с политикой в отношении обработки персональных данных
+                            </label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="consentAgree">
+                            <label class="form-check-label" for="consentAgree">
+                                Я принимаю условия обработки персональных данных
+                            </label>
+                        </div>
+
+                        <input class="rounded-5" type="submit" value="Отправить заявку">
+                    </form>
+                </div>
+                <div class="vacancy-img d-none d-xl-block">
+                    <img class="w-100 h-100 object-fit-cover" src="./assets/img/form-right2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews my-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2 class="my-4">Отзывы наших клиентов</h2>
+                <div class="logistic-nav-top d-none d-lg-flex justify-content-end container m-0 w-50">
+                    <button
+                        class="btn btn-nav btn-nav-reviews-prev rounded-5 d-flex justify-content-center align-items-center"><i
+                            class="bi bi-arrow-left-short"></i></button>
+                    <div
+                        class="logistic-pagination-top reviews-pagination-top d-flex justify-content-center align-items-center mx-5">
+                        00 / 00</div>
+                    <button
+                        class="btn btn-nav btn-nav-reviews-next rounded-5 d-flex justify-content-center align-items-center"><i
+                            class="bi bi-arrow-right-short"></i></button>
+                </div>
+            </div>
+            <div class="swiper reviews-cards">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide p-2">
+                        <div class="reviews-card p-4 rounded-4">
+                            <h3>Ирина М.</h3>
+                            <div class="reviews-card-role d-flex justify-content-between align-items-end py-2">
+                                <p>ЛогистООО «ТехПром»</p>
+                                <p><i class="bi bi-calendar3"></i> 2020–07–20</p>
+                            </div>
+                            <p>Работаем с компанией уже более двух лет. Груз всегда приходит вовремя, без потерь
+                                и задержек. Особенно
+                                ценим прозрачные условия и чёткую коммуникацию. Настоящие профессионалы своего дела!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-2">
+                        <div class="reviews-card p-4 rounded-4">
+                            <h3>Ирина М.</h3>
+                            <div class="reviews-card-role d-flex justify-content-between align-items-end py-2">
+                                <p>ЛогистООО «ТехПром»</p>
+                                <p><i class="bi bi-calendar3"></i> 2020–07–20</p>
+                            </div>
+                            <p>Работаем с компанией уже более двух лет. Груз всегда приходит вовремя, без потерь
+                                и задержек. Особенно
+                                ценим прозрачные условия и чёткую коммуникацию. Настоящие профессионалы своего дела!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-2">
+                        <div class="reviews-card p-4 rounded-4">
+                            <h3>Ирина М.</h3>
+                            <div class="reviews-card-role d-flex justify-content-between align-items-end py-2">
+                                <p>ЛогистООО «ТехПром»</p>
+                                <p><i class="bi bi-calendar3"></i> 2020–07–20</p>
+                            </div>
+                            <p>Работаем с компанией уже более двух лет. Груз всегда приходит вовремя, без потерь
+                                и задержек. Особенно
+                                ценим прозрачные условия и чёткую коммуникацию. Настоящие профессионалы своего дела!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-2">
+                        <div class="reviews-card p-4 rounded-4">
+                            <h3>Ирина М.</h3>
+                            <div class="reviews-card-role d-flex justify-content-between align-items-end py-2">
+                                <p>ЛогистООО «ТехПром»</p>
+                                <p><i class="bi bi-calendar3"></i> 2020–07–20</p>
+                            </div>
+                            <p>Работаем с компанией уже более двух лет. Груз всегда приходит вовремя, без потерь
+                                и задержек. Особенно
+                                ценим прозрачные условия и чёткую коммуникацию. Настоящие профессионалы своего дела!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-2">
+                        <div class="reviews-card p-4 rounded-4">
+                            <h3>Ирина М.</h3>
+                            <div class="reviews-card-role d-flex justify-content-between align-items-end py-2">
+                                <p>ЛогистООО «ТехПром»</p>
+                                <p><i class="bi bi-calendar3"></i> 2020–07–20</p>
+                            </div>
+                            <p>Работаем с компанией уже более двух лет. Груз всегда приходит вовремя, без потерь
+                                и задержек. Особенно
+                                ценим прозрачные условия и чёткую коммуникацию. Настоящие профессионалы своего дела!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-2">
+                        <div class="reviews-card p-4 rounded-4">
+                            <h3>Ирина М.</h3>
+                            <div class="reviews-card-role d-flex justify-content-between align-items-end py-2">
+                                <p>ЛогистООО «ТехПром»</p>
+                                <p><i class="bi bi-calendar3"></i> 2020–07–20</p>
+                            </div>
+                            <p>Работаем с компанией уже более двух лет. Груз всегда приходит вовремя, без потерь
+                                и задержек. Особенно
+                                ценим прозрачные условия и чёткую коммуникацию. Настоящие профессионалы своего дела!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logistic-nav d-flex d-md-none justify-content-between container py-3">
+            <button
+                class="btn btn-nav btn-nav-reviews-prev rounded-5 d-flex justify-content-center align-items-center"><i
+                    class="bi bi-arrow-left-short"></i></button>
+            <div class="logistic-pagination reviews-pagination d-flex justify-content-center align-items-center">00 / 00
+            </div>
+            <button
+                class="btn btn-nav btn-nav-reviews-next rounded-5 d-flex justify-content-center align-items-center"><i
+                    class="bi bi-arrow-right-short"></i></button>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <h2>Актуальные новости и события</h2>
+            <div class="news-cards row">
+                <div class="col-xl-5">
+                    <div class="news-card p-4 rounded-4 my-3">
+                        <div class="position-relative rounded-4 overflow-hidden">
+                            <div class="news-img">
+                                <img class="w-100 h-100" src="./assets/img/news1.png" alt="">
+                            </div>
+                            <div class="position-absolute bg-primary w-100 h-100 top-0 bg-opacity-10"></div>
+                        </div>
+                        <div class="news-text d-flex flex-column">
+                            <div class="news-info d-flex justify-content-between my-3">
+                                <p><i class="bi bi-calendar3"></i> 2020–07–20</p>
+                                <p><i class="bi bi-eye"></i> 304</p>
+                            </div>
+                            <h3 class="my-3">Оптимизация складской логистики: 5 практических советов</h3>
+                            <p>Эффективная складская логистика — ключ к снижению издержек, ускорению поставок
+                                и повышению качества
+                                обслуживания клиентов. Даже при налаженной системе всегда есть пространство
+                                для улучшений...</p>
+                            <button class="btn align-self-end">Подробнее <i
+                                    class="bi bi-arrow-right-short"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-7">
+                    <div class="news-card p-4 rounded-4 my-3 d-lg-flex">
+                        <div class="position-relative rounded-4 overflow-hidden">
+                            <div class="news-img">
+                                <img class="w-100 h-100" src="./assets/img/news2.png" alt="">
+                            </div>
+                            <div class="position-absolute bg-primary w-100 h-100 top-0 bg-opacity-10"></div>
+                        </div>
+                        <div class="news-text d-flex flex-column ms-lg-3">
+                            <div class="news-info d-flex justify-content-between my-3">
+                                <p><i class="bi bi-calendar3"></i> 2020–07–20</p>
+                                <p><i class="bi bi-eye"></i> 304</p>
+                            </div>
+                            <h3 class="my-3">Логистический форум 2025</h3>
+                            <p>Компания приняла участие в крупнейшем отраслевом форуме в Москве. Поделились кейсами и
+                                узнали о новых
+                                решениях в международной логистике.</p>
+                            <button class="btn align-self-end">Подробнее <i
+                                    class="bi bi-arrow-right-short"></i></button>
+                        </div>
+                    </div>
+                    <div class="news-card p-4 rounded-4 my-3 d-lg-flex">
+                        <div class="position-relative rounded-4 overflow-hidden">
+                            <div class="news-img">
+                                <img class="w-100 h-100" src="./assets/img/news3.png" alt="">
+                            </div>
+                            <div class="position-absolute bg-primary w-100 h-100 top-0 bg-opacity-10"></div>
+                        </div>
+                        <div class="news-text d-flex flex-column ms-lg-3">
+                            <div class="news-info d-flex justify-content-between my-3">
+                                <p><i class="bi bi-calendar3"></i> 2020–07–20</p>
+                                <p><i class="bi bi-eye"></i> 304</p>
+                            </div>
+                            <h3 class="my-3">Снижение тарифов на мультимодальные перевозки</h3>
+                            <p>Снижение ставок на 12% при заказе комплексной логистики через порты Владивостока и
+                                Находки.</p>
+                            <button class="btn align-self-end">Подробнее <i
+                                    class="bi bi-arrow-right-short"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="mob-footer container d-flex d-lg-none flex-column align-items-center">
+            <div class="footer-logo my-3">
+                <img src="./assets/img/logo-big.svg" alt="">
+            </div>
+            <div class="contact-btns d-flex flex-column align-items-center">
+                <a href="tel:+79129999999" class="fw-bold">+7 (912) 999-99-99</a>
+                <div class="d-flex align-items-center gap-3 my-3">
+                    <button class="btn massager-btn tg-btn"></button>
+                    <button class="btn massager-btn whatsapp-btn"></button>
+                    <button class="btn massager-btn viber-btn"></button>
+                </div>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-center " href="#">О компании</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">География перевозок</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">Акции</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">Наши проекты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">Вакансии</a>
+                </li>
+            </ul>
+            <button class="btn header-btn rounded-5 w-100 my-3">
+                Запрос ставки
+            </button>
+        </div>
+        <div class="big-footer container d-none d-lg-flex justify-content-between align-items-baseline gap-5">
+            <div class="footer-logo my-3">
+                <img src="./assets/img/logo-big.svg" alt="">
+            </div>
+            <div>
+                <ul class="navbar-nav">
+                    <li><a class="first-menu-item" href="#">Услуги</a></li>
+                    <li><a href="#">Авиаперевозки грузов</a></li>
+                    <li><a href="#">Перевозки грузов автомобильным транспортом</a></li>
+                    <li><a href="#">Морские перевозки грузов</a></li>
+                    <li><a href="#">Железнодорожные перевозки грузов</a></li>
+                    <li><a href="#">Мультимодальные перевозки грузов</a></li>
+                    <li><a href="#">Перевозка сборных грузов</a></li>
+                    <li><a href="#">Дополнительные услуги</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="navbar-nav">
+                    <li><a class="first-menu-item" href="#">О компании</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Наши проекты</a></li>
+                    <li><a href="#">География перевозок</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            <div class="contact-btns d-flex flex-column">
+                <ul class="navbar-nav">
+                    <li><a class="first-menu-item" href="#">Контакты</a></li>
+                </ul>
+                <a href="tel:+79129999999" class="fw-bold">+7 (912) 999-99-99</a>
+                <div class="d-flex align-items-center gap-3 my-3">
+                    <button class="btn massager-btn tg-btn"></button>
+                    <button class="btn massager-btn whatsapp-btn"></button>
+                    <button class="btn massager-btn viber-btn"></button>
+                </div>
+            </div>
+            <button class="btn header-btn rounded-5">
+                Запрос ставки
+            </button>
+        </div>
+    </footer>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.achievements {
+  h2 {
+    color: #2d6ac8;
+  }
+
+  .achievements-card {
+    border: 1px solid #2d6ac899;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    h3 {
+      font-weight: 500;
+      font-size: 24px;
+      color: #2d6ac8;
+      transition: color 0.3s;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      color: #2d6ac8;
+      transition: color 0.3s;
+    }
+
+    div {
+      height: 200px;
+    }
+
+    &:hover {
+      h3,
+      p {
+        color: #fff;
+      }
+      background: #2d6ac8;
+    }
+  }
+}

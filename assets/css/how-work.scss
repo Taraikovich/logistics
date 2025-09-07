@@ -1,0 +1,40 @@
+.how-work {
+  h2 {
+    color: #2d6ac8;
+  }
+  &-card {
+    background: #f5f9ff;
+    h3 {
+      font-family: 'Manrope';
+      font-weight: 700;
+      font-size: clamp(18px, 2.5vw, 24px);
+      color: #2d6ac8;
+    }
+    p {
+      font-family: 'Manrope';
+      font-weight: 500;
+      font-size: 16px;
+    }
+    & &-number {
+      width: 47px;
+      height: 47px;
+      font-family: 'Manrope';
+      font-weight: 700;
+      font-size: 32px;
+      color: #2d6ac8;
+      border: 2px solid #2d6ac8;
+    }
+    &.request-card {
+      background: #2d6ac8;
+      h3 {
+        color: #fff;
+        font-size: 28px;
+      }
+      .how-work-card-number {
+        font-size: 48px;
+        margin-top: 100px;
+        color: #fff;
+      }
+    }
+  }
+}

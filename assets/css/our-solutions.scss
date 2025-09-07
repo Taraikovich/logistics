@@ -1,0 +1,13 @@
+.our-solutions {
+  h2 {
+    color: #2d6ac8;
+  }
+  &-item {
+    border: 1px solid #2d6ac866;
+    p {
+      font-weight: 700;
+      font-size: clamp(16px, 2.5vw, 24px);
+      color: #2d6ac8;
+    }
+  }
+}

@@ -1,0 +1,198 @@
+@use 'nav';
+@use 'header';
+@use 'header-cargo';
+@use 'our-transportation';
+@use 'request-bid';
+@use 'client-receives';
+@use 'delivery';
+@use 'reviews';
+@use 'our-projects';
+@use 'guarantees';
+@use 'promotion';
+@use 'news';
+@use 'cargo';
+@use 'why-us';
+@use 'how-work';
+@use 'how-we-work';
+@use 'faq';
+@use 'work-with-us';
+@use 'vacancies';
+@use 'vacancy-request';
+@use 'promo-cards';
+@use 'promo-faq';
+@use 'promo-request';
+@use 'cargo-catalog';
+@use 'header-geography';
+@use 'geo-services';
+@use 'int-trans';
+@use 'our-solutions';
+@use 'header-partnership';
+@use 'how-help';
+@use 'values';
+@use 'cooperation';
+@use 'achievements';
+@use 'coop-form';
+@use 'footer';
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  padding-top: 60px;
+  font-family: 'Manrope';
+}
+
+h1 {
+  font-family: Manrope;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: clamp(32px, 5.5vw, 74px);
+  color: #fff;
+}
+
+h2 {
+  font-family: Manrope;
+  font-weight: 800;
+  font-size: clamp(32px, 3.5vw, 48px);
+  color: #3b3b3b;
+}
+
+h3 {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 24px;
+  color: #3b3b3b;
+}
+
+.logistic-nav,
+.logistic-nav-top {
+  .btn-nav {
+    width: 88px;
+    height: 56px;
+    background: #2d6ac8;
+    color: #fff;
+    font-size: 32px;
+
+    &:hover {
+      background: #003998;
+    }
+
+    &.swiper-button-disabled {
+      color: #97aac6;
+      background: none;
+      opacity: 1;
+    }
+  }
+
+  .logistic-pagination,
+  .logistic-pagination-top {
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 16px;
+    width: auto;
+    color: #2d6bc88f;
+
+    .swiper-pagination-current {
+      font-weight: bold;
+      color: #2d6ac8;
+      text-decoration: underline;
+    }
+  }
+}
+
+.btn-white {
+  font-family: Manrope;
+  font-weight: 500;
+  font-size: 20px;
+  color: #2d6ac8;
+  background: #fff;
+
+  &:hover {
+    background: #2d6ac8;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+}
+
+.breadcrumb {
+  li a {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    color: #2d6ac8;
+  }
+
+  li.active {
+    font-weight: 700;
+    color: #2d6ac8;
+  }
+}

@@ -1,0 +1,28 @@
+.promo-faq {
+  .accordion {
+    .accordion-item {
+      border: 1px solid #2d6ac866;
+
+      .accordion-button {
+        background-color: #ffffff00;
+        font-weight: 700;
+        font-size: clamp(18px, 2.5vw, 20px);
+        color: #2d6ac8;
+        &::after {
+          border: 2px solid #2d6ac8;
+          border-radius: 100%;
+          background: none;
+          content: url('../img/chevron-down.svg');
+          width: 29px;
+          height: 29px;
+          display: flex;
+          justify-content: center;
+          align-items: start;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

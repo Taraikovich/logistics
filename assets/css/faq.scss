@@ -1,0 +1,26 @@
+.faq {
+  .accordion {
+    .accordion-item {
+      border: none;
+    }
+    .accordion-button {
+      border: 1px solid #2d6ac866;
+      color: #2d6ac8;
+      font-family: 'Manrope';
+      font-weight: 700;
+      font-size: 18px;
+
+      &::after {
+        border: 2px solid #2d6ac8;
+        border-radius: 100%;
+        background: none;
+        content: url('../img/chevron-down.svg');
+        width: 29px;
+        height: 29px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+      }
+    }
+  }
+}

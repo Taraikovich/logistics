@@ -1,0 +1,68 @@
+.promo-cards {
+  p {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .promo-card-10,
+  .promo-card-7 {
+    min-height: 389px;
+    background: #2d6ac8;
+    color: #fff;
+    font-size: clamp(14px, 2.5vw, 18px);
+    h3 {
+      font-weight: 800;
+      font-size: clamp(28px, 2.5vw, 44px);
+      color: #fff;
+    }
+    .btn {
+      color: #2d6ac8;
+      background: #fff;
+    }
+  }
+
+  .promo-card-7 {
+    background: url('../img/7.svg') no-repeat, #2d6ac8;
+    background-position: -17px -17px;
+
+    @media screen and (min-width: 1000px) {
+      background: url('../img/7.svg') no-repeat 0 -17px,
+        url('../img/7-2.svg') no-repeat 110% 120%, #2d6ac8;
+    }
+  }
+
+  .promo-card-other {
+    border: 1px solid #2d6ac8;
+    color: #2d6ac8;
+    font-weight: 400;
+    font-size: clamp(14px, 2.5vw, 16px);
+    min-height: 425px;
+
+    h3 {
+      font-weight: 800;
+      color: #2d6ac8;
+      font-size: clamp(18px, 2.5vw, 24px);
+    }
+    p {
+      font-size: clamp(14px, 2.5vw, 16px);
+    }
+
+    .btn {
+      color: #fff;
+      background: #2d6ac8;
+    }
+  }
+
+  .promo-card-blue {
+    color: #fff;
+    background: #2d6ac8;
+
+    h3 {
+      color: #fff;
+    }
+
+    .btn {
+      color: #2d6ac8;
+      background: #fff;
+    }
+  }
+}

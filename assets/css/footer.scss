@@ -1,0 +1,27 @@
+footer {
+  background-color: #f0f4fa;
+  .massager-btn {
+    scale: 1;
+  }
+
+  .big-footer {
+    .first-menu-item {
+      font-size: 20px;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    li {
+      line-height: 15px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      font-family: 'Manrope';
+      font-weight: 500;
+      font-size: 14px;
+      color: #2d6ac8;
+      text-decoration: none;
+    }
+  }
+}

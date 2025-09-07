@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons-1.13.1/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xxl d-flex justify-content-between fixed-top">
+        <div class="container p-0">
+            <div class="logo-mob ms-2 d-xxl-none">
+                <img src="./assets/img/logo.png.svg" alt="logo" />
+            </div>
+
+            <div class="d-flex align-items-center">
+                <select class="rounded-4 border-primary text-primaryme-xxl-3 me-xxl-5">
+                    <option value="ru">RU</option>
+                    <option value="en">EN</option>
+                </select>
+
+                <button class="btn header-btn header-btn-mob rounded-5 ms-1 d-xxl-none">
+                    Запрос ставки
+                </button>
+            </div>
+
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                <div class="input-group search-box d-xxl-none">
+                    <input type="text" class="form-control rounded-start-4" placeholder="Поиск..." />
+                    <button class="btn rounded-end-4" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+                <ul class="navbar-nav gap-xxl-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О компании</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="#">Услуги</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Транспортные услуги</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Дополнительные услуги</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">География перевозок</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Акции</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Наши проекты</a>
+                    </li>
+                </ul>
+
+                <div class="contact-btns d-flex align-items-center justify-content-between gap-xxl-3">
+                    <a href="tel:+79129999999" class="fw-bold">+7 (912) 999-99-99</a>
+                    <div class="d-flex align-items-center gap-xxl-2">
+                        <button class="btn massager-btn tg-btn"></button>
+                        <button class="btn massager-btn whatsapp-btn"></button>
+                        <button class="btn massager-btn viber-btn"></button>
+                        <button class="btn header-btn rounded-5 ms-xxl-3 d-none d-xxl-block">
+                            Запрос ставки
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="overflow-hidden rounded-bottom-5 position-relative">
+        <div class="header-nav">
+            <div class="container d-flex align-items-center justify-content-between py-3">
+                <div class="d-none d-xxl-flex">
+                    <img src="./assets/img/logo-big.svg" alt="logo" />
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-header-nav active rounded-start-4 px-4" aria-current="page">Партнёр</a>
+                    <a href="#" class="btn btn-header-nav px-4">Соискатель</a>
+                    <a href="#" class="btn btn-header-nav rounded-end-4 px-4">Клиент</a>
+                </div>
+
+                <div class="input-group search-box-header d-none d-md-flex">
+                    <input type="text" class="form-control rounded-start-5" placeholder="Поиск..." />
+                    <button class="btn btn-search rounded-end-5" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-geography">
+            <div class="container">
+                <div class=" d-flex flex-column justify-content-lg-center align-items-lg-center mt-lg-5">
+                    <h1 class="my-3">География перевозок</h1>
+                    <p class="my-3">Эффективные грузоперевозки из Европы, Китая и США. Мы предлагаем решения для роста
+                        Вашего бизнеса
+                        и расширения рынков</p>
+                    <button class="btn rounded-5 p-3 px-lg-5 my-4">
+                        Запрос ставки <i class="bi bi-arrow-up-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb my-5">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">География перевозок</li>
+            </ol>
+        </nav>
+    </div>
+
+    <section class="geo-services">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-3 g-3">
+                <div class="col">
+                    <div class="geo-services-card p-4 rounded-4 h-100">
+                        <h3>Сроки доставки</h3>
+                        <p>Оперативная и надёжная доставка с возможностью выбора экспресс-опций по всем маршрутам.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="geo-services-card p-4 rounded-4 h-100">
+                        <h3>Региональные факторы</h3>
+                        <p>Сезонность, погодные условия, политические взаимоотношения, законодательные особенности
+                            транзитных стран, и многое другое</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="geo-services-card p-4 rounded-4 h-100">
+                        <h3>Оптимизация перевозки:</h3>
+                        <p>определение более эффиктивного маршрута, распределение грузов по транспортным средствам,
+                            выбор складов консолидации по пути перевозки грузов, удаленное оформление</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="int-trans">
+        <div class="container">
+            <h2>Международные перевозки</h2>
+            <div class="row">
+                <div class="col-12 col-lg-6 py-4">
+                    <p>Мы предлагаем широкий спектр услуг по организации грузоперевозок из Европы, США, Китая, в такие
+                        страны,
+                        как Беларусь, Россия, Киргизия, Казахстан и другие государства ЕАЭС. Также транспортируем товары
+                        в
+                        обратном направлении. Мы гарантируем надёжность и безопастность на каждом этапе доставки,
+                        включая
+                        ежедневные статусы, консолидацию и открытость в решении сопутствующих вопросов. Никогда не
+                        игнорируем
+                        звонки наших клиентов. </p>
+                    <img class="d-block d-lg-none" src="./assets/img/inter.png" alt="">
+                    <p>Особое внимание уделяем таможенному оформлению и сопровождению грузов. Есть возможность оформлять
+                        экспортные в Европе удаленно, что позволяет минимизировать время на доставку Вашего груза.
+                        Возникающие
+                        вопросы в пути для нас, не проблемы, а выполнимые задачи.</p>
+                </div>
+                <div class="col-12 col-lg-6 d-none d-lg-block">
+                    <img class="w-100 h-100 object-fit-cover" src="./assets/img/interbig.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-solutions my-5">
+        <div class="container">
+            <h2 class="my-3">Наши решения включают:</h2>
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="our-solutions-item rounded-4 h-100 d-flex align-items-center">
+                        <p class="p-3 m-0">Мультимодальные перевозки</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="our-solutions-item rounded-4 h-100 d-flex align-items-center">
+                        <p class="p-3 m-0">Морские перевозки</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="our-solutions-item rounded-4 h-100 d-flex align-items-center">
+                        <p class="p-3 m-0">Автоперевозки сборные грузы</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="our-solutions-item rounded-4 h-100 d-flex align-items-center">
+                        <p class="p-3 m-0">Авиаперевозки</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="our-solutions-item rounded-4 h-100 d-flex align-items-center">
+                        <p class="p-3 m-0">Автоперевозки комплектные грузы</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="our-solutions-item rounded-4 h-100 d-flex align-items-center">
+                        <p class="p-3 m-0">Железнодорожные перевозки</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="delivery">
+        <div class="container">
+            <div class="delivery-bg">
+                <img src="./assets/img/map2.png" alt="">
+            </div>
+            <div class="swiper delivery-cards">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="delivery-card d-flex flex-wrap rounded-4 p-4">
+                            <div class="delivery-card-img">
+                                <img src="./assets/img/china.png" alt="">
+                            </div>
+                            <div class="delivery-card-text">
+                                <h3>Китай</h3>
+                                <p>Авто-доставка, наземные и железнодорожные маршруты, контроль на всех этапах.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="delivery-card d-flex flex-wrap rounded-4 p-4">
+                            <div class="delivery-card-img">
+                                <img src="./assets/img/aisha.png" alt="">
+                            </div>
+                            <div class="delivery-card-text">
+                                <h3>Центральная Азия</h3>
+                                <p>Регулярные рейсы, опытные водители, сопровождение и оформление.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="delivery-card d-flex flex-wrap rounded-4 p-4">
+                            <div class="delivery-card-img">
+                                <img src="./assets/img/erope.png" alt="">
+                            </div>
+                            <div class="delivery-card-text">
+                                <h3>Европа</h3>
+                                <p>Гарантированная доставка "от двери до двери", автоперевозки, мультимодальные схемы,
+                                    авиа и ЖД</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="delivery-card d-flex flex-wrap rounded-4 p-4">
+                            <div class="delivery-card-img">
+                                <img src="./assets/img/s-aisha.png" alt="">
+                            </div>
+                            <div class="delivery-card-text">
+                                <h3>Юго-Восточная Азия </h3>
+                                <p>Гибкие решения для ВЭД, контейнерные перевозки и сборные грузы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="delivery-card d-flex flex-wrap rounded-4 p-4">
+                            <div class="delivery-card-img">
+                                <img src="./assets/img/america.png" alt="">
+                            </div>
+                            <div class="delivery-card-text">
+                                <h3>Америка</h3>
+                                <p>Авиадоставка и морские перевозки.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="delivery-card d-flex flex-wrap rounded-4 p-4">
+                            <div class="delivery-card-img">
+                                <img src="./assets/img/cis.png" alt="">
+                            </div>
+                            <div class="delivery-card-text">
+                                <h3>Другие страны СНГ</h3>
+                                <p>Оптимальные логистические решения с минимальными затратами времени.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logistic-nav d-flex d-xxl-none justify-content-between container py-3">
+            <button
+                class="btn btn-nav btn-nav-delivery-prev rounded-5 d-flex justify-content-center align-items-center"><i
+                    class="bi bi-arrow-left-short"></i></button>
+            <div class="logistic-pagination delivery-pagination d-flex justify-content-center align-items-center">00 /
+                00
+            </div>
+            <button
+                class="btn btn-nav btn-nav-delivery-next rounded-5 d-flex justify-content-center align-items-center"><i
+                    class="bi bi-arrow-right-short"></i></button>
+        </div>
+    </section>
+
+    <section class="why-us my-5">
+        <div class="container">
+            <h2 class="my-5">Почему выбирают нас</h2>
+            <div class="swiper why-us-cards">
+                <div class="swiper-wrapper d-flex align-items-stretch">
+                    <div class="swiper-slide d-flex h-auto">
+                        <div class="why-us-card p-4 rounded-4 d-flex flex-column justify-content-center">
+                            <h3>Ваша коммуникация происходит только с одним специалистом</h3>
+                            <p>- по всем направлениям (консультация, просчет доставки, вопросы купли-продажи,
+                                сертификация
+                                товара, запуск в работу, загрузка-выгрузка и таможенное оформление, контроль за
+                                платежами);
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex h-auto">
+                        <div class="why-us-card promo-card p-4 rounded-4 d-flex flex-column justify-content-center">
+                            <h3>Акции</h3>
+                            <p>Наличие акций под первую поставку и для постоянных клиентов
+                            </p>
+                            <button class="btn rounded-5">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex h-auto">
+                        <div class="why-us-card p-4 rounded-4 d-flex flex-column justify-content-center">
+                            <h3>Связь со специалистом 24/7</h3>
+                            <p>Бесплатная консультация и получение информации на протяжении всей перевозки.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex h-auto">
+                        <div class="why-us-card p-4 rounded-4 d-flex flex-column justify-content-center">
+                            <h3>Несколько вариантов доставки груза</h3>
+                            <p>Есть возможность выбора любого маршрута, исходя из вашего бюджета и предпочтении сроков
+                                доставки.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex h-auto">
+                        <div class="why-us-card p-4 rounded-4 d-flex flex-column justify-content-center">
+                            <h3>Возможность уменьшения стоимости перевозки </h3>
+                            <p>возможность уменьшения стоимости перевозки во время доставки Вашего груза. Даже при
+                                запуске заявки в работу и после фактической загрузки, мы стараемся уменьшить
+                                себестоимость организации перевозки в меньшую сторону</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex h-auto">
+                        <div class="why-us-card request-card p-4 rounded-4 d-flex justify-content-between w-100">
+                            <h3 class="align-self-end">Запрос ставки</h3>
+                            <button class="btn align-self-start p-0"><i
+                                    class="bi bi-arrow-up-right-circle"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="logistic-nav d-flex d-xxl-none justify-content-between container py-3">
+            <button
+                class="btn btn-nav btn-nav-whu-us-prev rounded-5 d-flex justify-content-center align-items-center"><i
+                    class="bi bi-arrow-left-short"></i></button>
+            <div class="logistic-pagination whu-us-pagination d-flex justify-content-center align-items-center">00 /
+                00
+            </div>
+            <button
+                class="btn btn-nav btn-nav-whu-us-next rounded-5 d-flex justify-content-center align-items-center"><i
+                    class="bi bi-arrow-right-short"></i></button>
+        </div>
+    </section>
+
+    <section class="request-bid my-5">
+        <div class="container">
+            <div class="request-bid-wrapper d-flex rounded-5 overflow-hidden">
+                <div class="request-bid-form p-4 p-lg-5">
+                    <h2 class="mb-3">Запрос ставки</h2>
+                    <p>Полнота заполнения заявки гарантирует быстрый расчёт ставки. Если у нас останутся вопросы,
+                        мы свяжемся
+                        с вами.</p>
+                    <p>*Обращаем внимание, что мы работаем только с юридическими лицами.</p>
+                    <form action="" method="post">
+                        <input type="text" name="name" placeholder="ФИО*" required>
+                        <input type="text" name="company" placeholder="Компания*" required>
+                        <input type="email" name="email" placeholder="Ваш адрес электронной почты">
+                        <input type="tel" name="tel" placeholder="+375 ХХ ХХХ-ХХ-ХХ">
+                        <input type="text" name="сфкпщ" placeholder="Наименование груза (код ТНВЭД)*" required>
+                        <p>Ознакомьтесь с Разъяснением порядка обработки персональных данных и Политикой в отношении
+                            обработки
+                            персональных данных, где подробно описаны ваши права в отношении персональных данных,
+                            и мы понятно
+                            объясняем,
+                            как и зачем используем данные о вас.</p>
+                        <div class="checkbox d-flex">
+                            <input type="checkbox" name="policy" id="policy-checkbox">
+                            <label class="w-75" for="policy-checkbox">
+                                Я прочитал(а) Разъяснение порядка обработки персональных данных и ознакомился с
+                                Политикой в отношении
+                                обработки персональных данных
+                            </label>
+                        </div>
+                        <div class="checkbox d-flex">
+                            <input type="checkbox" name="privacy" id="privacy-checkbox">
+                            <label class="w-75" for="privacy-checkbox">
+                                Я принимаю условия обработки персональных данных
+                            </label>
+                        </div>
+                        <input class="btn rounded-5" type="submit" value="Отправить заявку">
+                    </form>
+                </div>
+                <div class="request-bid-img d-none d-lg-flex w-50">
+                    <img src="./assets/img/form-right.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="mob-footer container d-flex d-lg-none flex-column align-items-center">
+            <div class="footer-logo my-3">
+                <img src="./assets/img/logo-big.svg" alt="">
+            </div>
+            <div class="contact-btns d-flex flex-column align-items-center">
+                <a href="tel:+79129999999" class="fw-bold">+7 (912) 999-99-99</a>
+                <div class="d-flex align-items-center gap-3 my-3">
+                    <button class="btn massager-btn tg-btn"></button>
+                    <button class="btn massager-btn whatsapp-btn"></button>
+                    <button class="btn massager-btn viber-btn"></button>
+                </div>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-center " href="#">О компании</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">География перевозок</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">Акции</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">Наши проекты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#">Вакансии</a>
+                </li>
+            </ul>
+            <button class="btn header-btn rounded-5 w-100 my-3">
+                Запрос ставки
+            </button>
+        </div>
+        <div class="big-footer container d-none d-lg-flex justify-content-between align-items-baseline gap-5">
+            <div class="footer-logo my-3">
+                <img src="./assets/img/logo-big.svg" alt="">
+            </div>
+            <div>
+                <ul class="navbar-nav">
+                    <li><a class="first-menu-item" href="#">Услуги</a></li>
+                    <li><a href="#">Авиаперевозки грузов</a></li>
+                    <li><a href="#">Перевозки грузов автомобильным транспортом</a></li>
+                    <li><a href="#">Морские перевозки грузов</a></li>
+                    <li><a href="#">Железнодорожные перевозки грузов</a></li>
+                    <li><a href="#">Мультимодальные перевозки грузов</a></li>
+                    <li><a href="#">Перевозка сборных грузов</a></li>
+                    <li><a href="#">Дополнительные услуги</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="navbar-nav">
+                    <li><a class="first-menu-item" href="#">О компании</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Наши проекты</a></li>
+                    <li><a href="#">География перевозок</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            <div class="contact-btns d-flex flex-column">
+                <ul class="navbar-nav">
+                    <li><a class="first-menu-item" href="#">Контакты</a></li>
+                </ul>
+                <a href="tel:+79129999999" class="fw-bold">+7 (912) 999-99-99</a>
+                <div class="d-flex align-items-center gap-3 my-3">
+                    <button class="btn massager-btn tg-btn"></button>
+                    <button class="btn massager-btn whatsapp-btn"></button>
+                    <button class="btn massager-btn viber-btn"></button>
+                </div>
+            </div>
+            <button class="btn header-btn rounded-5">
+                Запрос ставки
+            </button>
+        </div>
+    </footer>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>

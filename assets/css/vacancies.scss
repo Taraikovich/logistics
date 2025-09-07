@@ -1,0 +1,53 @@
+.vacancies {
+  .vacancy-card {
+    border: 1px solid #2d6ac8;
+    height: 336px;
+
+    &-city {
+      font-family: 'Manrope';
+      font-weight: 400;
+      font-size: 12px;
+      i {
+        color: #2d6ac8;
+      }
+    }
+
+    &-blue {
+      color: #2d6ac8;
+    }
+
+    h3 {
+      font-family: 'Manrope';
+      font-weight: 700;
+      font-size: clamp(18px, 2.5vw, 24px);
+      color: #2d6ac8;
+    }
+
+    p {
+      font-family: 'Manrope';
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .btn {
+      font-family: 'Manrope';
+      font-weight: 500;
+      font-size: 16px;
+      color: #2d6ac8;
+      padding: 0;
+      i {
+        font-size: 18px;
+        margin-left: 5px;
+        &::before {
+          transition: transform 0.3s;
+        }
+      }
+
+      &:hover {
+        i:before {
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+}

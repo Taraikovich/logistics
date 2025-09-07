@@ -1,0 +1,23 @@
+.header-partnership {
+  height: 800px;
+  background: url('../img/partnership.png') no-repeat center, #003998;
+  background-size: cover;
+
+  h1 {
+    max-width: 1000px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: clamp(18px, 2.5vw, 20px);
+    color: #fff;
+    max-width: 553px;
+  }
+
+  .btn {
+    background: #fff;
+    color: #2d6ac8;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}

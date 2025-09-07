@@ -1,0 +1,60 @@
+.news {
+  .news-cards {
+    @media screen and (min-width: 1200px) {
+      & > div:first-child {
+        .news-card {
+          h3 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    .news-card {
+      transition: background 0.3s;
+      &:hover {
+        background-color: #d7e7ff;
+      }
+      & > div {
+        width: 100%;
+      }
+      background: #f5f9ff;
+      .news-img {
+        height: 250px;
+        @media screen and (min-width: 1200px) {
+          height: 100%;
+        }
+        img {
+          object-fit: cover;
+        }
+      }
+
+      .news-text {
+        .news-info {
+          font-family: 'Manrope';
+          font-weight: 500;
+          font-size: 14px;
+          color: #2d6ac8;
+        }
+        h3 {
+          font-family: 'Manrope';
+          font-weight: 700;
+          font-size: 18px;
+          color: #2d6ac8;
+        }
+
+        p {
+          font-family: 'Manrope';
+          font-weight: 400;
+          font-size: 14px;
+          margin: 0;
+        }
+
+        .btn {
+          font-family: 'Manrope';
+          color: #2d6ac8;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.client-receives {
+  h2 {
+    color: #2d6ac8;
+  }
+
+  .client-receives-cards {
+    @media screen and (min-width: 1400px) {
+      width: 60%;
+      height: 350px;
+    }
+    .client-receives-card {
+      background: #f5f9ff;
+      @media screen and (min-width: 1400px) {
+        &:nth-child(odd) {
+          max-width: 60%;
+        }
+        &:nth-child(even) {
+          max-width: 47%;
+        }
+      }
+
+      h3 {
+        font-family: 'Manrope';
+        font-size: 28px;
+        color: #2d6ac8;
+        @media screen and (min-width: 1400px) {
+          font-size: 48px;
+          font-weight: 900;
+        }
+      }
+
+      p {
+        font-family: 'Manrope';
+        font-weight: 500;
+        font-size: 18px;
+        color: #2d6ac8;
+      }
+    }
+  }
+
+  .client-receives-request {
+    @media screen and (min-width: 1400px) {
+      width: 40%;
+      margin-top: -65px;
+    }
+    img {
+      width: 100%;
+    }
+    .btn-req {
+      width: 100%;
+      height: 56px;
+      background: #2d6ac8;
+      color: #fff;
+      &:hover {
+        background: #003998;
+      }
+    }
+  }
+}
