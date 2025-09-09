@@ -1,0 +1,26 @@
+.choose-us {
+  .swiper-wrapper {
+    max-height: 600px;
+  }
+  h2 {
+    color: #285cae;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    background: url('../img/choose1.svg') no-repeat 95% 5%, #285cae;
+    color: #fdfdff;
+
+    h3 {
+      color: #fdfdff;
+      font-weight: 600;
+      font-size: clamp(24px, 2.5vw, 30px);
+    }
+
+    li {
+      font-weight: 400;
+      font-size: clamp(14px, 2.5vw, 15px);
+    }
+  }
+}

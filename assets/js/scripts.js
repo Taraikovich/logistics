@@ -367,6 +367,156 @@ function initAchievementsSlider() {
     })
 }
 
+function initTeamSlider() {
+    return new Swiper('.team-cards', {
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".btn-nav-team-next",
+            prevEl: ".btn-nav-team-prev",
+        },
+        pagination: {
+            el: ".team-pagination",
+            type: "fraction",
+            formatFractionCurrent: function (number) {
+                return number < 10 ? "0" + number : number;
+            },
+            formatFractionTotal: function (number) {
+                return number < 10 ? "0" + number : number;
+            },
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 4,
+            },
+            1400: {
+                slidesPerView: 5,
+            },
+        }
+
+
+    })
+}
+
+function initChooseUsSlider() {
+    return new Swiper('.choose-us-cards', {
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".btn-nav-choose-us-next",
+            prevEl: ".btn-nav-choose-us-prev",
+        },
+        pagination: {
+            el: ".choose-us-pagination",
+            type: "fraction",
+            formatFractionCurrent: function (number) {
+                return number < 10 ? "0" + number : number;
+            },
+            formatFractionTotal: function (number) {
+                return number < 10 ? "0" + number : number;
+            },
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                grid: {
+                    rows: 1,
+                },
+            },
+            768: {
+                slidesPerView: 2,
+                grid: {
+                    rows: 1,
+                },
+            },
+            1400: {
+                slidesPerView: 2,
+                grid: {
+                    rows: 2,
+                    fill: "column",
+                },
+            },
+        }
+    })
+}
+
+function initImplementedSlider() {
+    return new Swiper('.implemented-cards', {
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".btn-nav-implemented-next",
+            prevEl: ".btn-nav-implemented-prev",
+        },
+        pagination: {
+            el: ".implemented-pagination",
+            type: "fraction",
+            formatFractionCurrent: function (number) {
+                return number < 10 ? "0" + number : number;
+            },
+            formatFractionTotal: function (number) {
+                return number < 10 ? "0" + number : number;
+            },
+        },
+        on: {
+            paginationUpdate(swiper, paginationEl) {
+                const topPagination = document.querySelector('.implemented-pagination-top');
+                if (topPagination) {
+                    topPagination.innerHTML = paginationEl.innerHTML;
+                }
+            }
+        },
+    })
+}
+
+function initTrustSlider() {
+    return new Swiper('.trust-cards', {
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".btn-nav-trust-next",
+            prevEl: ".btn-nav-trust-prev",
+        },
+        pagination: {
+            el: ".trust-pagination",
+            type: "fraction",
+            formatFractionCurrent: function (number) {
+                return number < 10 ? "0" + number : number;
+            },
+            formatFractionTotal: function (number) {
+                return number < 10 ? "0" + number : number;
+            },
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                grid: {
+                    rows: 2,
+                    fill: "row",
+                },
+            },
+            768: {
+                slidesPerView: 2,
+                grid: {
+                    rows: 2,
+                    fill: "row",
+                },
+            },
+            1400: {
+                slidesPerView: 3,
+                grid: {
+                    rows: 2,
+                    fill: "row",
+                },
+            },
+        }
+
+    })
+}
+
 initTransportationSlider();
 initDeliverySlider();
 initReviewsSlider();
@@ -376,4 +526,8 @@ initButtonsScroll();
 initWhyUsSlider();
 initWorkWithUsSlider();
 initHowHelpSlider();
-initAchievementsSlider()
+initAchievementsSlider();
+initTeamSlider();
+initChooseUsSlider();
+initImplementedSlider();
+initTrustSlider();

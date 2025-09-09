@@ -1,0 +1,40 @@
+.trust {
+  h2 {
+    color: #285cae;
+  }
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #285cae;
+    margin: 0;
+  }
+  &-card {
+    background: #285cae;
+
+    div {
+      background: #fdfdff;
+      margin-top: 20px;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: clamp(24px, 2.5vw, 30px);
+      text-align: center;
+      color: #fdfdff;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: clamp(14px, 2.5vw, 16px);
+      text-align: center;
+      color: #285cae;
+      margin: 0;
+
+      &:last-child {
+        color: #285cae99;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.implemented {
+  h2 {
+    color: #285cae;
+  }
+  &-card {
+    width: 100%;
+    border: 1px solid #285cae99;
+    h3 {
+      font-weight: 600;
+      font-size: clamp(24px, 2.5vw, 32px);
+      color: #285cae;
+    }
+
+    p,
+    li {
+      font-weight: 400;
+      font-size: clmp(16px, 2.5vw, 18px);
+      color: #285cae;
+      margin: 0;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    &-text {
+      @media screen and (min-width: 1000px) {
+        width: 50%;
+      }
+    }
+
+    &-img {
+      height: 330px;
+
+      @media screen and (min-width: 1000px) {
+        height: 490px;
+        width: 50%;
+      }
+    }
+  }
+}
