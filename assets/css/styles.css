@@ -1692,6 +1692,38 @@ header.header-contacts {
   background: #2d6ac8;
 }
 
+.not-found {
+  height: 80vh;
+  background: linear-gradient(180deg, rgba(14, 93, 222, 0.8) 0%, #003283 82.69%);
+}
+.not-found h1 {
+  text-align: center;
+  max-width: 850px;
+}
+.not-found p {
+  font-weight: 400;
+  font-size: clamp(16px, 2.5vw, 20px);
+  text-align: center;
+  color: #fdfdff;
+  max-width: 540px;
+}
+.not-found .btn {
+  background: #fff;
+  color: #003998;
+  width: 200px;
+  height: 50px;
+}
+.not-found .btn div:last-child {
+  background: #003998;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+}
+.not-found .container {
+  background: url("../img/404.png") no-repeat center;
+  background-size: contain;
+}
+
 footer {
   background-color: #f0f4fa;
 }
