@@ -1,0 +1,105 @@
+header.header-contacts {
+  background: #bdd5ff;
+}
+
+.contacts {
+  .breadcrumb-item a,
+  .breadcrumb li.active,
+  .breadcrumb-item + .breadcrumb-item::before {
+    color: #ffffff;
+  }
+  background: linear-gradient(
+      180deg,
+      rgba(47, 109, 211, 0.71) 0%,
+      rgba(3, 53, 136, 0.71) 100%
+    ),
+    url('../img/bg-contacts.jpg') no-repeat center;
+  background-size: cover;
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  &-block {
+    background: #ffffffde;
+    box-shadow: 4px 4px 10px 0px #0f2d72;
+    backdrop-filter: blur(10px);
+    padding: 24px;
+    border-radius: 15px;
+
+    h3 {
+      font-weight: 700;
+      font-size: 24px;
+      color: #003998;
+    }
+
+    h4 {
+      font-weight: 700;
+      font-size: clamp(18px, 2.5vw, 20px);
+      color: #3b3b3b;
+      margin-top: 24px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: clamp(18px, 2.5vw, 20px);
+      color: #3b3b3b;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-weight: 700;
+        font-size: clamp(18px, 2.5vw, 20px);
+        color: #3b3b3b;
+        margin: 24px 0 12px;
+      }
+
+      input {
+        height: 60px;
+        border: 1px solid #c9c9c9;
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 0 24px;
+
+        &::placeholder {
+          color: #0715364d;
+        }
+      }
+
+      textarea {
+        border: 1px solid #c9c9c9;
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 24px;
+
+        &::placeholder {
+          color: #0715364d;
+        }
+      }
+
+      input[type='checkbox'] {
+        width: 35px;
+        height: 35px;
+      }
+
+      .checkbox-text {
+        font-weight: 400;
+        font-size: clamp(12px, 2.5vw, 20px);
+      }
+
+      input[type='submit'] {
+        width: 225px;
+        border-radius: 111px;
+        font-weight: 600;
+        font-size: 16px;
+        color: #ffffff;
+        background: #2d6ac8;
+      }
+    }
+  }
+}
