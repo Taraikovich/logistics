@@ -1724,6 +1724,59 @@ header.header-contacts {
   background-size: contain;
 }
 
+.blog-archive h1 {
+  color: #2d6ac8;
+}
+.blog-archive-info {
+  color: #2d6ac8;
+  margin: 30px 0;
+}
+.blog-archive-info p {
+  margin: 0;
+}
+.blog-archive-block {
+  border: 1px solid #2d6ac8;
+}
+.blog-archive-img {
+  height: 254px;
+}
+.blog-archive-img img {
+  object-position: center;
+}
+.blog-archive-text h2 {
+  font-weight: 700;
+  font-size: clamp(18px, 2.5vw, 20px);
+  vertical-align: middle;
+  color: #2d6ac8;
+  margin: 0;
+}
+.blog-archive-text p {
+  font-size: clamp(14px, 2.5vw, 16px);
+  vertical-align: middle;
+  color: #2d6ac8;
+  margin: 10px 0;
+}
+.blog-archive .btn {
+  padding: 0;
+  color: #2d6ac8;
+  font-weight: 700;
+  margin-top: 35px;
+}
+.blog-archive .blog-archive-pagination div {
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3b3b3b;
+}
+.blog-archive .blog-archive-pagination div.current {
+  background-color: #2d6ac8;
+  color: #fff;
+  border-radius: 100%;
+}
+
 footer {
   background-color: #f0f4fa;
 }
