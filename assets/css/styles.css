@@ -82,6 +82,10 @@ nav {
   background: #173483 url("../img/viber-hover.svg") no-repeat center;
 }
 
+.share-btn {
+  background: url("../img/share.svg") no-repeat center;
+}
+
 .header-btn {
   width: 145px;
   height: 38px;
@@ -1777,6 +1781,69 @@ header.header-contacts {
   border-radius: 100%;
 }
 
+.blog-post h1 {
+  color: #2d6ac8;
+}
+.blog-post p {
+  font-weight: 500;
+  font-size: clamp(14px, 2.5vw, 18px);
+}
+.blog-post-img {
+  height: 330px;
+}
+.blog-post-last-news-card {
+  border: 1px solid rgba(45, 106, 200, 0.4);
+}
+.blog-post-last-news-card div:first-child {
+  height: 120px;
+}
+.blog-post-last-news-card p {
+  font-weight: 500;
+  font-size: clamp(14px, 2.5vw, 16px);
+  vertical-align: middle;
+  color: #2d6ac8;
+}
+
+.other-news-header .btn {
+  background: #2d6ac8;
+  color: #fdfdff;
+  width: 200px;
+  height: 50px;
+}
+.other-news-header .btn div:last-child {
+  background: #fdfdff;
+  color: #2d6ac8;
+  width: 40px;
+  height: 40px;
+}
+.other-news-card {
+  border: 1px solid rgba(45, 106, 200, 0.4);
+}
+.other-news-card h3,
+.other-news-card p {
+  color: #2d6ac8;
+}
+.other-news-card > div:first-child {
+  height: 282px;
+}
+.other-news-card .btn {
+  padding: 0;
+  color: #2d6ac8;
+  font-weight: 700;
+}
+.other-news .btn-news {
+  background: #2d6ac8;
+  color: #fdfdff;
+  width: 200px;
+  height: 50px;
+}
+.other-news .btn-news div:last-child {
+  background: #fdfdff;
+  color: #2d6ac8;
+  width: 40px;
+  height: 40px;
+}
+
 footer {
   background-color: #f0f4fa;
 }
@@ -1867,7 +1934,7 @@ body {
 }
 
 h1 {
-  font-family: Manrope;
+  font-family: "Manrope";
   font-weight: 700;
   font-style: Bold;
   font-size: clamp(32px, 5.5vw, 74px);
@@ -1882,7 +1949,7 @@ h2 {
 }
 
 h3 {
-  font-family: Manrope;
+  font-family: "Manrope";
   font-weight: 700;
   font-size: 24px;
   color: #3b3b3b;
@@ -1926,7 +1993,7 @@ h3 {
 }
 
 .btn-white {
-  font-family: Manrope;
+  font-family: "Manrope";
   font-weight: 500;
   font-size: 20px;
   color: #2d6ac8;

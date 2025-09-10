@@ -39,6 +39,7 @@
 @use 'contacts';
 @use 'not-found';
 @use 'blog-archive';
+@use 'blog-post';
 @use 'footer';
 
 @font-face {
@@ -118,7 +119,7 @@ body {
 }
 
 h1 {
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-weight: 700;
   font-style: Bold;
   font-size: clamp(32px, 5.5vw, 74px);
@@ -133,7 +134,7 @@ h2 {
 }
 
 h3 {
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-weight: 700;
   font-size: 24px;
   color: #3b3b3b;
@@ -176,7 +177,7 @@ h3 {
 }
 
 .btn-white {
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-weight: 500;
   font-size: 20px;
   color: #2d6ac8;
