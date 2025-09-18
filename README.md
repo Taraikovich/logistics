@@ -1,0 +1,13 @@
+pages:
+- https://taraikovich.github.io/logistics/
+- https://taraikovich.github.io/logistics/cargo
+- https://taraikovich.github.io/logistics/geography
+- https://taraikovich.github.io/logistics/partnership
+- https://taraikovich.github.io/logistics/promotions
+- https://taraikovich.github.io/logistics/service
+- https://taraikovich.github.io/logistics/vacancies
+- https://taraikovich.github.io/logistics/turnkey
+- https://taraikovich.github.io/logistics/contacts
+- https://taraikovich.github.io/logistics/404
+- https://taraikovich.github.io/logistics/archive
+- https://taraikovich.github.io/logistics/single
