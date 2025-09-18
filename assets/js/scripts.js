@@ -93,7 +93,7 @@ function initDeliverySlider() {
                 slidesPerView: 3,
                 grid: {
                     rows: 2,
-                    fill: "column",
+                    fill: "row",
                 },
             },
         }

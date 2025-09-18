@@ -2,6 +2,8 @@
   .vacancy-card {
     border: 1px solid #2d6ac8;
     height: 336px;
+    transition: background-color 0.3s;
+    cursor: pointer;
 
     &-city {
       font-family: 'Manrope';
@@ -21,12 +23,14 @@
       font-weight: 700;
       font-size: clamp(18px, 2.5vw, 24px);
       color: #2d6ac8;
+      transition: color 0.3s;
     }
 
     p {
       font-family: 'Manrope';
       font-weight: 400;
       font-size: 14px;
+      transition: color 0.3s;
     }
 
     .btn {
@@ -35,9 +39,13 @@
       font-size: 16px;
       color: #2d6ac8;
       padding: 0;
+      transition: color 0.3s;
+
       i {
         font-size: 18px;
         margin-left: 5px;
+        transition: color 0.3s;
+
         &::before {
           transition: transform 0.3s;
         }
@@ -47,6 +55,18 @@
         i:before {
           transform: translateX(5px);
         }
+      }
+    }
+
+    &:hover {
+      background: #2d6ac8;
+      color: #fff;
+
+      i,
+      h3,
+      p,
+      .btn {
+        color: #fff;
       }
     }
   }

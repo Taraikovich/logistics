@@ -1,20 +1,27 @@
 .why-us {
   &-card {
     background: #2d6ac8;
+    height: 230px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
     h3 {
       font-family: 'Manrope';
       font-weight: 700;
       font-size: 20px;
       color: #fff;
     }
+
     p {
       font-family: 'Manrope';
       font-weight: 400;
       font-size: 14px;
       color: #fff;
     }
+
     &.promo-card {
       background: url('../img/percent.png') no-repeat right top, #2d6ac8;
+
       .btn {
         background: #fff;
         color: #2d6ac8;
@@ -27,28 +34,66 @@
         font-size: 48px;
       }
     }
+
     @media screen and (min-width: 1400px) {
       background: #fff;
       border: 1px solid #2d6ac899;
+      width: 100%;
+
       h3,
       p {
         color: #2d6ac8;
       }
-      &.promo-card {
-        background: url('../img/percent2.png') no-repeat right top, #fff;
-        .btn {
-          background: #2d6ac8;
-          color: #fff;
-        }
+
+      p {
+        display: none;
       }
-      &.request-card {
+
+      &:hover {
         background: #2d6ac8;
+
         h3 {
           color: #fff;
         }
+
+        p {
+          display: inline;
+          color: #fff;
+        }
+      }
+
+      &.promo-card {
+        background: url('../img/percent2.png') no-repeat right top, #fff;
+
+        .btn {
+          background: #2d6ac8;
+          color: #fff;
+          transition: background-color 0.3s;
+        }
+
+        &:hover {
+          background: url('../img/percent.png') no-repeat right bottom, #2d6ac8;
+          .btn {
+            background: #fff;
+            color: #2d6ac8;
+          }
+        }
+      }
+
+      &.request-card {
+        background: #2d6ac8;
+        transition: background-color 0.3s;
+
+        h3 {
+          color: #fff;
+        }
+
         .btn {
           color: #fff;
           font-size: 48px;
+        }
+        &:hover {
+          background: #003998;
         }
       }
     }

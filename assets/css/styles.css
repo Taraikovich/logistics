@@ -398,6 +398,7 @@ header .header-content .btn-order:hover {
 }
 .client-receives .client-receives-cards .client-receives-card {
   background: #f5f9ff;
+  border-radius: 10px;
 }
 @media screen and (min-width: 1400px) {
   .client-receives .client-receives-cards .client-receives-card:nth-child(odd) {
@@ -469,6 +470,8 @@ header .header-content .btn-order:hover {
   background: #fff;
   cursor: pointer;
   transition: background 0.3s;
+  height: 230px;
+  align-items: center;
 }
 .delivery .delivery-cards .delivery-card .delivery-card-img img {
   width: 100%;
@@ -612,6 +615,9 @@ header .header-content .btn-order:hover {
   font-size: 16px;
 }
 
+.news {
+  margin: 100px 0;
+}
 @media screen and (min-width: 1200px) {
   .news .news-cards > div:first-child .news-card h3 {
     font-size: 30px;
@@ -678,7 +684,7 @@ header .header-content .btn-order:hover {
 .cargo .swiper-scrollbar.swiper-scrollbar-horizontal {
   position: relative;
   opacity: 1;
-  background: #e0e0e0; /* светло-серый фон */
+  background: #e0e0e0;
   border-radius: 4px;
 }
 .cargo .swiper-scrollbar-drag {
@@ -702,12 +708,16 @@ header .header-content .btn-order:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: right;
+  object-position: left;
   overflow: visible;
+  transform: scaleX(-1) scale(150%) translateX(70px);
 }
 
 .why-us-card {
   background: #2d6ac8;
+  height: 230px;
+  transition: background-color 0.3s;
+  cursor: pointer;
 }
 .why-us-card h3 {
   font-family: "Manrope";
@@ -736,10 +746,24 @@ header .header-content .btn-order:hover {
   .why-us-card {
     background: #fff;
     border: 1px solid rgba(45, 106, 200, 0.6);
+    width: 100%;
   }
   .why-us-card h3,
   .why-us-card p {
     color: #2d6ac8;
+  }
+  .why-us-card p {
+    display: none;
+  }
+  .why-us-card:hover {
+    background: #2d6ac8;
+  }
+  .why-us-card:hover h3 {
+    color: #fff;
+  }
+  .why-us-card:hover p {
+    display: inline;
+    color: #fff;
   }
   .why-us-card.promo-card {
     background: url("../img/percent2.png") no-repeat right top, #fff;
@@ -747,9 +771,18 @@ header .header-content .btn-order:hover {
   .why-us-card.promo-card .btn {
     background: #2d6ac8;
     color: #fff;
+    transition: background-color 0.3s;
+  }
+  .why-us-card.promo-card:hover {
+    background: url("../img/percent.png") no-repeat right bottom, #2d6ac8;
+  }
+  .why-us-card.promo-card:hover .btn {
+    background: #fff;
+    color: #2d6ac8;
   }
   .why-us-card.request-card {
     background: #2d6ac8;
+    transition: background-color 0.3s;
   }
   .why-us-card.request-card h3 {
     color: #fff;
@@ -757,6 +790,9 @@ header .header-content .btn-order:hover {
   .why-us-card.request-card .btn {
     color: #fff;
     font-size: 48px;
+  }
+  .why-us-card.request-card:hover {
+    background: #003998;
   }
 }
 
@@ -901,6 +937,8 @@ header .header-content .btn-order:hover {
 .vacancies .vacancy-card {
   border: 1px solid #2d6ac8;
   height: 336px;
+  transition: background-color 0.3s;
+  cursor: pointer;
 }
 .vacancies .vacancy-card-city {
   font-family: "Manrope";
@@ -918,11 +956,13 @@ header .header-content .btn-order:hover {
   font-weight: 700;
   font-size: clamp(18px, 2.5vw, 24px);
   color: #2d6ac8;
+  transition: color 0.3s;
 }
 .vacancies .vacancy-card p {
   font-family: "Manrope";
   font-weight: 400;
   font-size: 14px;
+  transition: color 0.3s;
 }
 .vacancies .vacancy-card .btn {
   font-family: "Manrope";
@@ -930,16 +970,28 @@ header .header-content .btn-order:hover {
   font-size: 16px;
   color: #2d6ac8;
   padding: 0;
+  transition: color 0.3s;
 }
 .vacancies .vacancy-card .btn i {
   font-size: 18px;
   margin-left: 5px;
+  transition: color 0.3s;
 }
 .vacancies .vacancy-card .btn i::before {
   transition: transform 0.3s;
 }
 .vacancies .vacancy-card .btn:hover i:before {
   transform: translateX(5px);
+}
+.vacancies .vacancy-card:hover {
+  background: #2d6ac8;
+  color: #fff;
+}
+.vacancies .vacancy-card:hover i,
+.vacancies .vacancy-card:hover h3,
+.vacancies .vacancy-card:hover p,
+.vacancies .vacancy-card:hover .btn {
+  color: #fff;
 }
 
 .resume-upload {
@@ -1285,12 +1337,17 @@ header .header-content .btn-order:hover {
 }
 .how-help-card {
   background: #003998;
+  cursor: pointer;
   height: 270px;
+  transition: background-color 0.3s;
 }
 .how-help-card h3 {
   font-weight: 700;
   font-size: clamp(24px, 2.5vw, 26px);
   color: #fff;
+}
+.how-help-card:hover {
+  background: #285cae;
 }
 .how-help-card p,
 .how-help-card .btn {
@@ -2015,6 +2072,10 @@ h3 {
 .breadcrumb li.active {
   font-weight: 700;
   color: #2d6ac8;
+}
+
+section {
+  margin: 0 0 100px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

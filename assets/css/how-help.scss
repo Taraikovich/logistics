@@ -31,11 +31,18 @@
 
   &-card {
     background: #003998;
+    cursor: pointer;
     height: 270px;
+    transition: background-color 0.3s;
+
     h3 {
       font-weight: 700;
       font-size: clamp(24px, 2.5vw, 26px);
       color: #fff;
+    }
+
+    &:hover {
+      background: #285cae;
     }
 
     p,
